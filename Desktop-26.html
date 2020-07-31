@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>музей</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/normalize.css">
+    </head>
+    <body>
+        <section class="museum-main-menu">
+           <div class="museum-main-background-one">
+            <div class="museum-main-background-two">
+            <div class="museum-main-list__title"><a href="home.html" class="museum-main-list__title-link"><img src="img/Desktop-16-Component2.png" alt="logo" class="museum-main__list-logo"></a><h1 class="museum-main__list-title">билеты</h1></div>
+            <a href="Desktop-13a.html" class="museum-main__link-back"><img src="img/garden-link-back.png" alt="arrow" class="museum-main__link-back-arrow"></a>
+                <h1 class="museum-main-title">музей</h1>
+                <p class="museum-main-description">Третий четверг месяца вход свободный</p>
+                <form class="museum-main-form"  method="post" id="ajax_form" action="">
+                    <table class="museum-main-table">
+                        <tr>
+                            <td class="title"><p class="museum-text adult">взрослый</p></td>
+                            <td>
+                                <div class="museum-main-btn-flex">
+                                    <input type="button" id="buttonCountMinus" value="-" class="museum-btn"><div id="buttonCountNumber" class="museum-one">0</div><input type="button" id="buttonCountPlus" value="+" class="museum-btn museum-btn-2"><input type="hidden" value="1" id="num" name="num">
+                                </div>
+                            </td>
+                            <td><div class="price" id="price">200</div></td>
+                            <td class="title"><p class="museum-text excursion">экскурсия</p></td>
+                            <td><p class="total">Итог:</p></td>
+                            <td><div id="calculation" class="calculation-block">0</div></td>
+                        </tr>
+                        <tr>
+                            <td class="museum-text preferential">льготный</td>
+                            <td class="museum-main-btn-flex">
+                                <div class="museum-main-btn-flex">
+                                    <input type="button" id="buttonCountMinusTwo" value="-" class="museum-btn"><span id="buttonCountNumberTwo" class="museum-one">0</span><input type="button" id="buttonCountPlusTwo" value="+" class="museum-btn museum-btn-2">
+                                    <input type="hidden" value="0" id="numTwo" name="numTwo">
+                                </div>
+                            </td>
+                            <td><div class="price" id="priceTwo">150</div></td>
+                            <td class="title"><p class="museum-text free-entrance">свободное посещение</p></td>
+                            <td><p class="total">Итог:</p></td>
+                            <td><div id="calculationTwo" class="calculation-block">0</div></td>
+                        </tr>
+                        <tr>
+                            <td class="title" colspan="2"><input type="text" id="buttonCountPlus" placeholder="Введите данные документа" class="doc-information"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </form>
+                
+                <div class="museum-main-workshop-slider__item_btn">
+                  <a href="desktop-34.html" class="museum-main-workshop-slider__item_btn-description">далее</a>
+              </div>
+                
+           </div>
+           </div> 
+        </section>
+        <script src="js/counter.js"></script>
+        <script src="js/preferential.js"></script>
+    </body>
+</html>
